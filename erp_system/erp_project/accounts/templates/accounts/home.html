@@ -1,0 +1,20 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>홈페이지</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <style></style>
+
+</head>
+<body>
+    <h1>환영합니다!</h1>
+    <p>웹사이트에 오신 것을 환영합니다. 로그인하거나 회원가입을 진행해주세요.</p>
+    
+    <a href="{% url 'login' %}" class="button">로그인</a>
+    <a href="{% url 'signup' %}" class="button">회원가입</a>
+</body>
+</html>
